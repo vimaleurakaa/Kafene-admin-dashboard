@@ -2,4 +2,4 @@
 
 ---
 
-<a href="https://kafene-dashboard-vimaleurakaa.vercel.app/">LIVE DEMO</a>
+<a href="https://kafene-dashboard-vimaleurakaa.vercel.app/" target="_blank">LIVE DEMO</a>
