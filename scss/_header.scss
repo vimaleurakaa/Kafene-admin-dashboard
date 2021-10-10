@@ -1,0 +1,38 @@
+.navbar {
+  padding: 0px 40px;
+  box-shadow: 0 2px 4px #ccc;
+  background-color: #fff;
+  & .nav-wraper {
+    display: flex;
+    align-items: center;
+
+    & .navbar-brand {
+      display: flex;
+      align-items: center;
+
+      & span {
+        font-family: $primary-font;
+        font-weight: 500;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  & .nav {
+    & .nav-link {
+      font-size: 15px;
+      font-family: $primary-font;
+      color: $font-color-dark;
+      padding: 25px 15px;
+      font-weight: 500;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &.active {
+        color: $primary-color;
+      }
+    }
+  }
+}

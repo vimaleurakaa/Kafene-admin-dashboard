@@ -1,0 +1,27 @@
+//color variables
+$primary-color: #20b883;
+$secoundary-color: #ff7451;
+
+$font-color-dark: #333;
+$font-color-grey: #777;
+
+//font family
+$primary-font: "Poppins", sans-serif;
+
+// GRID
+$grid-width: 135rem;
+$gutter-vertical: 5rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 5rem;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font !important;
+  position: relative;
+  color: $font-color-dark;
+  line-height: 1.7;
+  background-color: #f7f7f7;
+}

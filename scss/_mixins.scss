@@ -1,0 +1,25 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin hoverUnderline($color) {
+  content: "";
+  background: none repeat scroll 0 0 transparent;
+  background: $color;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  left: 50%;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+@mixin hoverScale {
+  width: 100%;
+  left: 0;
+}

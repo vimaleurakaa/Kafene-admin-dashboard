@@ -1,0 +1,74 @@
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin {
+  & .card-title {
+    font-family: $primary-font;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+form {
+  width: 100%;
+}
+
+form .btn {
+  font-size: 16px;
+  font-family: $primary-font;
+  background-color: $primary-color;
+  width: 100%;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  font-family: $primary-font;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: 12px 20px;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+.form-label-group input::-moz-placeholder {
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+.form-label-group input::placeholder {
+  font-family: $primary-font;
+  font-size: 14px;
+}

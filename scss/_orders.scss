@@ -1,0 +1,66 @@
+main {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.orders_container {
+  font-family: $primary-font;
+  & .title {
+    font-family: $primary-font;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  & .filter_wraper {
+    > * {
+      margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    & .filer_checkbox {
+      display: block;
+      margin-bottom: 15px;
+
+      & input {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+#table {
+  & th {
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  & .table_body {
+    & td {
+      font-size: 14px;
+      background-color: #fff;
+      border-bottom: 4px solid #f6f7fb;
+      padding: 14px 24px;
+
+      &.dark_text {
+        color: $primary-font;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      &.grey_text {
+        color: #8c8c8c;
+      }
+
+      & .grey_text {
+        color: #8c8c8c;
+      }
+    }
+  }
+}

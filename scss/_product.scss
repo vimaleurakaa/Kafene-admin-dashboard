@@ -1,0 +1,46 @@
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  & th {
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  & .product_body {
+    & td {
+      font-size: 14px;
+      background-color: #fff;
+      border-bottom: 4px solid #f6f7fb;
+      padding: 14px 24px;
+
+      &.id {
+        color: #8c8c8c;
+        line-height: 1.5;
+      }
+
+      &.name {
+        color: $font-color-dark;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      &.brand {
+        color: #8c8c8c;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      &.eDate {
+        color: $font-color-dark;
+        width: 150px;
+        font-weight: 500;
+      }
+
+      &.price {
+        color: #8c8c8c;
+      }
+    }
+  }
+}
