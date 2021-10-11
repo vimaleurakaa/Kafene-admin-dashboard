@@ -31,7 +31,7 @@ $(document).ready(function () {
     <td class="grey_text">${data[i].dob}</td>
     <td class="dark_text">${data[i].gender}</td>
     <td class="dark_text">${data[i].currentCity}, ${data[i].currentCountry}</td>
-</tr>`;
+    </tr>`;
     }
 
     $("#ordersBody").html(usersDetails);
@@ -42,21 +42,21 @@ $(document).ready(function () {
     $("#ordersBody").html(noResultText);
   };
 
-  $(".search_submit").click(function (e) {
+  $(".user_search_filed").on("input", function (e) {
     e.preventDefault();
-    let searchText = $(".user_search_filed").val().toLowerCase();
-    if (searchText.length < 2) {
-      alert("Please enter at least 2 characters");
-      return;
-    } else {
-      const filterData = userData.filter((it) => {
-        const name = it.fullName?.toLowerCase();
-        if (name.search(searchText) !== -1) {
-          return it;
-        }
-      });
-      if (filterData.length !== 0) usersDisplay(filterData);
-      else noResult();
+    const searchText = $(this).val().toLowerCase();
+
+    const filterData = userData.filter((it) => {
+      const name = it.fullName?.toLowerCase();
+      if (name.search(searchText) !== -1) {
+        return it;
+      }
+    });
+    if (filterData.length !== 0) usersDisplay(filterData);
+    else noResult();
+
+    if ($(this).val() === "") {
+      usersDisplay(userData);
     }
   });
 
@@ -64,12 +64,6 @@ $(document).ready(function () {
     e.preventDefault();
     $(".user_search_filed").val("");
     getUserData();
-  });
-
-  $(".user_search_filed").on("input", function () {
-    if ($(this).val() === "") {
-      usersDisplay(userData);
-    }
   });
 
   $("#logout").click(function () {
